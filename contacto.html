@@ -22,9 +22,55 @@
                 </nav>
             </div>
         </header>
+
         <main>
-            test
+            <form action="">
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input class="inputPadron" type="text" id="nombreapellido">
+
+                <label for="correoelectronico">Corrreo Electronico</label>
+                <input class="inputPadron" type="text" id="correoelectronico">
+
+                <label for="telefono">Telefono</label>
+                <input class="inputPadron" type="text" id="telefono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea class="inputPadron" cols="70" rows="10" id="mensaje"></textarea>
+
+                <div>
+                    <p>¿Como le gustaria que lo contactemos?</p>
+
+                    <label for="radioemail">
+                        <input type="radio" name="contacto" id="radioemail" value="email">Email
+                    </label>
+                    
+
+                    <label for="radiotelefono">
+                        <input type="radio" name="contacto" id="radiotelefono" value="telefono">Telefono
+                    </label>
+                    
+
+                    <label for="radiowhatsapp">
+                        <input type="radio" name="contacto" id="radiowhatsapp" value="Whatsapp">Whatsapp
+                    </label>
+                    
+                </div>
+
+                <div>
+                    <p>En que horario desea ser atendido</p>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </div>
+
+                <label class="checkbox"><input type="checkbox">¿Le gustaria recibir novedades de la barberia alura?</label>
+
+                <input type="submit" value="Enviar formulario">
+            </form>
         </main>
+
         <footer>
             <img src="./imagenes/logo-blanco.png" alt="">
             <p class="copyright">&copy Copyright Barberia Alura 2024</p>
